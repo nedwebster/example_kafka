@@ -1,8 +1,10 @@
+from settings import HOST, PORT
+
 from confluent_kafka import Consumer
 
 
 c=Consumer({
-    'bootstrap.servers':'kafka:9092',
+    'bootstrap.servers':f'{HOST}:{PORT}',
     'group.id':'python-consumer',
     'auto.offset.reset':'earliest'
 })

@@ -1,3 +1,5 @@
+from settings import HOST, PORT
+
 from confluent_kafka import Producer
 from faker import Faker
 import json
@@ -21,7 +23,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # create Kafka Producer
-p=Producer({'bootstrap.servers':'kafka:9092'})
+p=Producer({'bootstrap.servers':f'{HOST}:{PORT}'})
 print('Kafka Producer has been initiated...')
 
 

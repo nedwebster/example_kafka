@@ -4,7 +4,7 @@ COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-COPY run.sh kafka_consumer.py kafka_producer.py ./
+COPY run.sh kafka_consumer.py kafka_producer.py settings.py ./
 
 RUN chmod +x ./run.sh
 
