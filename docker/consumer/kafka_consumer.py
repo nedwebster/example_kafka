@@ -1,5 +1,4 @@
 from settings import HOST, PORT
-
 from confluent_kafka import Consumer
 
 

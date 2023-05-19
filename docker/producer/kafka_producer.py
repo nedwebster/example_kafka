@@ -1,5 +1,4 @@
 from settings import HOST, PORT
-
 from confluent_kafka import Producer
 from faker import Faker
 import json
