@@ -15,7 +15,7 @@ This will start the kafka broker in a docker container.
 
 First, navigate to the following directory
 ```
-./docker/consumer/
+./apps/consumer/
 ```
 
 To run the consumer locally, simply run the following command:
