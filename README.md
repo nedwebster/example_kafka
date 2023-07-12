@@ -39,3 +39,7 @@ NOTE: The Kafka producer needs to be run in interactive mode!
 ```
 docker run --platform linux/amd64 --network=kafka_docker_example_net -e PYTHONUNBUFFERED=1 -ti test-producer 
 ```
+
+## Kafdrop
+
+The kafka implentation includes Kafdrop as an interactive UI to browse the kafka deployment. Once the kafka containers are running, navigate to: http://localhost:19000/topic/user-tracker
