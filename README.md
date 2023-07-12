@@ -34,3 +34,8 @@ Then run the consumer in a docker container using:
 ```
 docker run --platform linux/amd64 --network=kafka_docker_example_net -e PYTHONUNBUFFERED=1 test-consumer 
 ```
+
+NOTE: The Kafka producer needs to be run in interactive mode!
+```
+docker run --platform linux/amd64 --network=kafka_docker_example_net -e PYTHONUNBUFFERED=1 -ti test-producer 
+```

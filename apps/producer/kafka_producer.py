@@ -38,6 +38,7 @@ def receipt(err, msg):
 
 def main():
     while True:
+        input("press enter to create message\n")
         data = {
            'user_id': fake.random_int(min=20000, max=100000),
            'user_name': fake.name(),
@@ -49,7 +50,6 @@ def main():
         producer.poll(1)
         producer.produce('user-tracker', message.encode('utf-8'), callback=receipt)
         producer.flush()
-        time.sleep(10)
 
 
 if __name__ == "__main__":
